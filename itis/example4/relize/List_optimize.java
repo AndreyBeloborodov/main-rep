@@ -10,12 +10,12 @@ public class List_optimize<T> implements Mylist<T> {
 
     @Override
     public void add(T element) {
-        if(size >= arraySize) {
+        if (size >= arraySize) {
             int bufSize = arraySize;
             arraySize = bufSize + INCREMENTS_VALUE;
             Object[] buf_elements = elements;
             elements = new Object[arraySize];
-            for(int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {
                 elements[i] = buf_elements[i];
             }
         }
@@ -27,8 +27,8 @@ public class List_optimize<T> implements Mylist<T> {
     public void remove(Integer index) {
         Object[] new_elements = new Object[arraySize];
         int ok = 0;
-        for(int i = 0; i < size; i++) {
-            if(i == index) {
+        for (int i = 0; i < size; i++) {
+            if (i == index) {
                 ok = 1;
                 continue;
             }
