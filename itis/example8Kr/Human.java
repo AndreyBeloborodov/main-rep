@@ -1,6 +1,7 @@
 package itis.example8Kr;
 
-public class Human extends Creature {
+public class Human extends Creature
+                        implements IRider, IMiner {
 
     Human(String name) {
         super(name, 100);

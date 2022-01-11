@@ -1,5 +1,5 @@
 package itis.example8Kr;
 
-public interface IRider extends IMiner {
+public interface IRider {
     void ride();
 }

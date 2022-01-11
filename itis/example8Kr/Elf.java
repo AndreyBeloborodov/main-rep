@@ -1,6 +1,7 @@
 package itis.example8Kr;
 
-public class Elf extends Creature {
+public class Elf extends Creature
+                    implements IRider {
 
     Elf(String name) {
         super(name, 250);

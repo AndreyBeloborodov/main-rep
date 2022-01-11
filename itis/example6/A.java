@@ -5,9 +5,9 @@ public class A {
     static boolean isVowel(char c) {
         String values = "EYUIOAeyuioa";
         for (int i = 0; i < values.length(); i++) {
-            if (values.charAt(i) == c) return  true;
+            if (values.charAt(i) == c) return true;
         }
-        return  false;
+        return false;
     }
 
     static boolean ok(String s) {

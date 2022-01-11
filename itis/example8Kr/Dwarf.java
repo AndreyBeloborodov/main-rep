@@ -1,6 +1,7 @@
 package itis.example8Kr;
 
-public class Dwarf extends Creature {
+public class Dwarf extends Creature
+                        implements IMiner {
 
     Dwarf(String name) {
         super(name, 150);

@@ -1,6 +1,6 @@
 package itis.example8Kr;
 
-public class Creature implements IRider {
+public class Creature {
 
     String name;
     int level;
@@ -15,16 +15,6 @@ public class Creature implements IRider {
     void attack(Creature other) {
         other.hp = Math.max(0, other.hp - level);
         System.out.println(name + " attacks " + other.name + ": " + other.hp + " left");
-    }
-
-    @Override
-    public void ride() {
-        System.out.println("Я не умею");
-    }
-
-    @Override
-    public void mine() {
-        System.out.println("Я не умею");
     }
 
 }
